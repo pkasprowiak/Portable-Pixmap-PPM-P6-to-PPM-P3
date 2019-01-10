@@ -35,7 +35,7 @@ void readAndWrite(string P6, string P3)
 	p6.open(P6, ios::in | ios::binary);
 
 	ofstream p3;
-	p3.open("pp3.ppm", ios::out | ios::trunc);
+	p3.open(P3, ios::out | ios::trunc);
 
 	if ((p6.good()) && (p3.good()))
 	{
